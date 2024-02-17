@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart ticketing</title>
+
+    <!-- daisy UI and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css Lik -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <section class="container mx-auto mt-4 mb-8">
+
+        <header class="font-raleway">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#030712b3] text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#1DD1001A] font-semibold text-xl text-[#1DD100]">Bus <img src="./images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+
+        </header>
+    
+        <main class="font-raleway">
+            
+            <!-- Banner section -->
+            <section class="mt-10">
+                <div class=" card w-auto bg-base-100  image-full flex flex-col items-center ">
+                    <figure><img class="w-full" src="images/banner.png" alt="Shoes" /></figure>
+                    <div class="text-center ">
+                      <h2 class="text-6xl font-extrabold text-white">Raida Travel with</h2>
+                      <h2 class="text-6xl font-extrabold text-[#1DD100] lg:mt-5">R-Paribahan</h2>
+                      <p class="text-[18px] font-normal text-white lg:mt-7"> a road vehicle that carries significantly more passengers <br>than an average car or van, but less than the average rail transport.</p>
+                      <div class="card-actions justify-center lg:mt-7 ">
+                        <button class="btn bg-[#1DD100] border-none text-center font-bold text-[20px] text-[#030712] ">Buy Tickets</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end benar -->
+                  <div class="flex items-center justify-center gap-12 lg:mt-[-76px] mb-6 font-inter">
+                  <div class="card card-side bg-base-100 shadow-xl w-auto bg-white ">
+                    <figure><img src="./images/people.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">500K+</h2>
+                      <p>Registered users</p>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl w-auto bg-white border-solid">
+                    <figure><img src="./images/people.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">500K+</h2>
+                      <p>Registered users</p>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl w-auto bg-white border-solid">
+                    <figure><img src="./images/people.png" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">500K+</h2>
+                      <p>Registered users</p>
+                    </div>
+                  </div>
+    
+                </div>
+            </section>
+
+            <!-- cupon code section -->
+            <section class="m-16">
+                <h1 class="text-4xl font-bold text-[#030712] text-center m-8">Best offers for you</h1>
+                <div class="font-inter grid lg:grid-cols-2 gap-10">
+                    <div class="text-center grid grid-cols-3 bg-[#FFBF0F] rounded-[24px] justify-center items-center ">
+                        <div class="grid col-span-2 ">
+                            <div class="flex justify-between items-center text-center ">
+                                <div class="m-auto">
+                                    <h1 class="font-black text-[40px] text-[#030712]">15% OFF</h1>
+                                    <p class="font-semibold text-[20px] text-black">on your next purchase</p>
+                                    <p class="font-medium text-[18px] text-[#03071280]">use by January 2024</p>
+                                </div>
+                                <div class="">
+                                    <img src="./images/cupon-devider.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h1 class="font-bold text-[32px] text-[#030712]">NEW15</h1>
+                            <p class="font-medium text-[18px] text-[#03071280]">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="text-center grid grid-cols-3 bg-[#F78C9C] rounded-[24px] justify-center items-center ">
+                        <div class="grid col-span-2 ">
+                            <div class="flex justify-between items-center text-center ">
+                                <div class="m-auto">
+                                    <h1 class="font-black text-[40px] text-[#030712]">20% OFF</h1>
+                                    <p class="font-semibold text-[20px] text-black">on your next purchase</p>
+                                    <p class="font-medium text-[18px] text-[#03071280]">use by January 2024</p>
+                                </div>
+                                <div class="">
+                                    <img src="./images/cupon-devider.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h1 class="font-bold text-[32px] text-[#030712]">NEW15</h1>
+                            <p class="font-medium text-[18px] text-[#03071280]">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- button section -->
+            <section class="m-12">
+                <div class="card-actions justify-center mt-7 ">
+                    <button class="btn bg-[#FFFFFF]  border-[#1DD100] text-center font-bold text-[20px] text-[#030712] ">See All Offers</button>
+                  </div>
+            </section>
+
+        </main>
+
+        <!-- ticket sels section -->
+        <section class="font-inter ">
+            <div class="grid grid-cols-3">
+
+                <!-- Left side section -->
+                <div class="grid col-span-2">
+                    <h1 class="font-raleway text-2xl font-semibold text-[#030712]">Select Your Seat</h1>
+                    <div class="flex justify-between">
+                        <div class="flex gap-4">
+                            <img src="./images/seat-green.png" alt="">
+                            <h2 class="text-lg font-medium text-[#03071280]">Available</h2>
+                        </div>
+                        <div class="flex gap-4">
+                            <img src="./images/seat-green-filled.png" alt="">
+                            <h2 class="text-lg font-medium text-[#03071280">Selected</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- right side section -->
+                <div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

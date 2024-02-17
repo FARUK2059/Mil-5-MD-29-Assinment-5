@@ -1,0 +1,17 @@
+/* raleway font link */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+
+}
+
+/* Inter font lonk */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+ 
+}
