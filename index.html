@@ -16,7 +16,7 @@
 <body>
     
     <!-- first web part -->
-    <section class="">
+    <section id="first-page" class="">
 
         <section class="container mx-auto mt-4 mb-8">
 
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="">
-                                <h1 class="font-bold text-[32px] text-[#030712]">NEW15</h1>
+                                <h1 class="font-bold text-[32px] text-[#030712]">Couple 20</h1>
                                 <p class="font-medium text-[18px] text-[#03071280]">Coupon Code</p>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                 <div
                                     class="flex  items-center h-11 rounded-[12px] text-[#1DD100] bg-[#1DD10026] raleway-font gap-1 p-3">
                                     <img src="images/seat-green.png" alt="">
-                                    <h1>40</h1>
+                                    <h1><span id="totalSeats">40</span></h1>
                                     <p>Seats left</p>
                                 </div>
                             </div>
@@ -338,29 +338,23 @@
         
                                 <div class="text-2xl font-medium text-[#030712] flex justify-between mb-4">
                                     <h1 class=""> Seat 
-                                        <kbd class="kbd kbd-sm bg-[#1DD100]">2</kbd>
+                                        <kbd id="select-seat-count" class="kbd kbd-sm bg-[#1DD100]">0</kbd>
                                     </h1>
                                     <h1>Class</h1>
                                     <H1>Price</H1>
                                 </div>
-                                <hr>
-                                <div class="text-2xl font-medium text-[#03071299] flex justify-between mt-4 gap-4">
-                                    <h1 class=""> C2 </h1>
-                                    <h1 class="">Economoy</h1>
-                                    <H1>550</H1>
+                                
+                                <div class="text-base text-[#03071299] font-normal font-inter border-b-2 border-[#03071299]"
+                                    id="priceContainer">
+
                                 </div>
-                                <div class="text-2xl font-medium text-[#03071299] flex justify-between mt-4 gap-4 mb-4">
-                                    <h1 class=""> C2 </h1>
-                                    <h1 class="">Economoy</h1>
-                                    <H1>550</H1>
-                                </div>
-                                <hr>
+                                
         
                                 <!--first input section  -->
                                 <label class=" w-full max-w-xs">
                                     <div class="label">
                                       <span class="text-2xl font-bold text-[#030712]">Total Price</span>
-                                      <span class="text-2xl font-bold text-[#030712]">BDT 1100</span>
+                                      <span class="text-2xl font-bold text-[#030712]">BDT <span id="total-seat-price">0</span></span>
                                     </div>
                                     <label class="input input-bordered flex items-center gap-2">
                                         <input type="text" class="grow" placeholder="Have any copupon?" />
@@ -370,7 +364,7 @@
                                       </label>
                                     <div class="label">
                                       <span class="text-2xl font-bold text-[#030712]">Grand Totla</span>
-                                      <span class="text-2xl font-bold text-[#030712]">BDT 1100</span>
+                                      <span class="text-2xl font-bold text-[#030712]">BDT <span id="grend-total-price">0</span></span>
                                     </div>
                                   </label>
                             </div>
@@ -387,7 +381,7 @@
                                 <div class="label">
                                   <span class="text-2xl font-bold text-[#030712]">Phone Number*</span>
                                 </div>
-                                <input type="number"  height="0-11" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+                                <input id="number" type="number"  height="0-11" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
                             </label>
         
                             <label class="form-control w-full max-w-xs mb-4">
@@ -397,7 +391,7 @@
                                 <input type="email"  height="0-11" placeholder="Enter your email ID" class="input input-bordered " />
                             </label>
         
-                            <button class="btn w-full text-xl font-extrabold font-raleway bg-[#1DD100] text-[#FFFFFF] ">Next</button>
+                            <button id="next" onclick="play()" class="btn w-full text-xl font-extrabold font-raleway bg-[#1DD100] text-[#FFFFFF] ">Next</button>
         
                             <div class="flex justify-between p-8 font-normal text-base text-[#03071299] ">
                                 <h1 class="underline">Terms and Conditions</h1>
@@ -453,7 +447,7 @@
     </section>
 
     <!-- second web paert -->
-    <section class=" lg:grid bg-[#F7F8F8] min-h-screen">
+    <section id="second-step" class=" lg:grid bg-[#F7F8F8] min-h-screen">
         <div class=" flex justify-center items-center lg:mt-16 p-12">
             <div class=" artboard artboard-horizontal phone-4 bg-[#FFFFFF] rounded-2xl border-[#FFFFFF] items-center p-4">
                 <div class=" font-roboto justify-center items-center text-center lg:leading-8">

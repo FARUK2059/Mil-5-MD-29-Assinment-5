@@ -25,16 +25,7 @@
 
 }
 
-/* let selectedSeats = 0;
-let seats = document.querySelectorAll("button.busseat");
 
-
-seats.forEach(seat => {
-    seat.addEventListener("click", function(){
-        let isSelected = seat.classList.contains("selected");
-        
-    });
-} */
 
 
 
